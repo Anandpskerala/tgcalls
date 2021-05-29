@@ -116,7 +116,7 @@ with open('README.md', 'r', encoding='utf-8') as f:
     readme = f.read()
 
 setup(
-    name='tgcalls',
+    name='testtgcalls',
     version=f'0.0.9test',
     author='Il\'ya Semyonov',
     author_email='ilya@marshal.by',
