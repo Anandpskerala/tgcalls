@@ -317,7 +317,7 @@ class GroupCallNative(GroupCallNativeDispatcherMixin):
         await self.get_group_call(group)
 
         if self.group_call is None:
-            raise RuntimeError('Chat without a voice chat')
+            raise RuntimeError('Chat doesn\'t have a voice chat')
 
         handler_group = await self.__set_and_get_handler_group()
         self.client.add_handler(self._update_handler, handler_group)
